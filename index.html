@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--STYLING-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet"> 
+
+    <title>Mig's Portfolio</title>
+</head>
+<body>
+    <header class="header" id="navbar">
+        <nav class="navbar">
+            <h1>
+            <a href="#" class="nav-logo">ADITI</a>
+            </h1>
+        <ul class = "nav">
+            <li class="nav-item"><a href="#home" class="nav-link">HOME</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">ABOUT ME</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">SKILLS</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">EXPERIENCE</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">EDUCATION</a></li>
+            <li class="nav-item"><a href="edit.html" class="nav-link">PROJECTS</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">CONTACT</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        </nav>
+    </header>
+
+    <!-- BANNER -->
+    <section class="banner" id="home">
+        <img src="images/home-background.png" class="cover" alt="">
+        <div class="intro">
+           <h2>Hi! I am Aditi Agarwal,<br>an aspiring Software Engineer.</h2>
+           <button id="cv-btn" onclick="window.open('https://drive.google.com/file/d/149hHhDS3mf3Zic33jMj22pfvdytDVzWl/view?usp=sharing')">
+            Resume
+           </button>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <h1 id="heading">
+            ABOUT ME
+        </h1>
+        
+        <div class="container">
+            <div class="content-section">
+                <div class="content">
+                    <h3>So who am I, you ask?</h3>
+                    <p>
+                        I am Aditi a.k.a Mig. I'm currently in my Sophomore year
+            pursuing B.Tech in ECE at BIT Mesra. I've won a scholarship of 50% 
+            by Google and selected among top 200 students from all over India, 
+            for WE'21 (previously known as WTEF), a two years professional training 
+            program consisting of coding bootcamps, online sessions and mentorship.
+            <br><br>
+            I am currently a web developer and an aspiring Software Engineer. 
+            I like solving problems on Leetcode and exploring iOS development 
+            in my free time. I have worked in various languages like 
+            Python, JavaScript, Swift and C++.
+            <br><br>
+            Apart from programming, some of my interests include Swimming, 
+            Music (especially Taylor Swift), Cooking and designing. 
+            I love tweeting about tech related stuff too.
+                </p>
+                </div>
+                <div class="image-section">
+                    <img src="images/aditi.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
