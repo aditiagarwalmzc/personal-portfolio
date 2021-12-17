@@ -1,0 +1,91 @@
+.title {
+    background: linear-gradient(to right, crimson,pink, rgba(255, 172, 255, 0.794), rgba(171, 255, 255, 0.89), rgb(253, 255, 155), rgb(0, 255, 0));
+    background-size: 200% 200%;
+    animation: rainbow 2s ease-in-out infinite;
+    background-clip: text;
+    -webkit-background-clip:text;
+    transition: color .2s ease-in-out;
+    text-decoration-line: underline;
+    text-underline-offset: 0em;
+    text-decoration-thickness: 0px;
+    color: rgb(56, 71, 83);
+}
+
+.title:hover {
+    color:rgba(0,0,0,0);
+}
+
+@keyframes rainbow { 
+    0%{background-position:left}
+    50%{background-position:right}
+    100%{background-position:left}
+}
+
+.container {
+    width: 80%;
+    display: block;
+    margin:auto;
+}
+
+.content-section {
+    float: right;
+    width: 55%;
+}
+
+.image-section {
+    float: left;
+    width: 40%;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+}
+
+.content-section .title {
+    font-size: 28px;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 500;
+}
+
+.content-section .content p {
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    color: rgb(136, 146, 160);
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
+@media screen and (max-width: 1037px) {
+    .container {
+        width: 80%;
+        display: block;
+        margin:auto;
+    }
+
+    .content-section {
+        float:none;
+        width:100%;
+        display: block;
+        margin:auto;
+        padding-bottom: 90px;
+        text-align: center;
+    }
+
+    .image-section {
+        float:none;
+        width:100%;
+    }
+    .image-section img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin:auto;
+    }
+
+    .content-section .title {
+        text-align: center;
+        font-size: 19px;
+    }
+}
