@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+.proj-column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    
+}
+  
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+  
+.proj-container {
+    padding: 0 16px;
+}
+  
+.proj-container::after, .proj-row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.proj-container h2 {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    font-family: 'Noto Sans Display', sans-serif;
+    color: rgb(56, 71, 83);
+}
+
+.description {
+    padding-bottom: 10px;
+    color: grey;
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
+  
+.card #icon-container {
+    justify-content: left;
+    padding-bottom: 10px;
+}
+
+#icon-container #link {
+    padding-right: 10px;
+}
+
+.card #link {
+    color: rgb(0, 204, 255);
+}
+
+.card #github {
+    color: violet;
+}
+
+@media screen and (max-width: 650px) {
+    .proj-column {
+      width: 100%;
+      display: block;
+    }
+}
